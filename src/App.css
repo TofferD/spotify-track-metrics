@@ -1,0 +1,83 @@
+.App {
+  margin: 10px;
+  background-color: rgb(33, 36, 36);
+  border: 2px solid rgb(33, 36, 36);
+  border-radius: 10px;
+  color: white;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  padding: 20px;
+}
+
+.Controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SelectionControls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.SearchResults {
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(33, 36, 36);;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  max-height: 150px;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  padding: 8px;
+  background-color: rgb(33, 36, 36);
+  border: 1px solid #ccc;
+}
+
+.ChartContainer {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.PieChartContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PieChartContainer .chart-container {
+  flex: 1;
+}
+
+.PieChartContainer .legend-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.PieChartContainer .legend-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  font-size: 12px !important;
+  color: white !important;
+}
+
+.PieChartContainer .legend-color {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.PieChartContainer .legend-label {
+  white-space: nowrap !important;
+}
