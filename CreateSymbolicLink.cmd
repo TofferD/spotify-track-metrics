@@ -1,0 +1,1 @@
+mklink .\node_modules\PlayCounts.json ..\..\Storage\PlayCounts.json
