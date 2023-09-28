@@ -66,7 +66,7 @@ export default class SpotifyContent extends React.Component<ISpotifyContentProps
                         >
                             ≡
                         </span>
-                        <span>Individual Track Play Count Graph</span>
+                        <span>Individual Track Play Count</span>
                     </div>
                     <div
                         style={{

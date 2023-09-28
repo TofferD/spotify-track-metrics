@@ -128,7 +128,7 @@ export default class PlayCountBarGraph extends React.Component<IPlayCountBarGrap
         if (Object.keys(playCountJsonData).length > 0) {
             const sortedData = playCountJsonData.sort((a: { play_count: number; }, b: { play_count: number; }) => b.play_count - a.play_count);
             const limitedData = sortedData.slice(startRecord - 1, startRecord - 1 + recordsToInclude);
-            trackNames = limitedData.map((item: { name: string; }) => item.name);
+            trackNames = limitedData.map((item: { name: string; album: any; }) => `${item.album.artists[0].name} - ${item.name}`);
             playCounts = limitedData.map((item: { play_count: number; }) => item.play_count);
             playCountLabels = trackNames.map((label: string) => {
                 return label.length > 10 ? `${label.substr(0, 10)}...` : label;
