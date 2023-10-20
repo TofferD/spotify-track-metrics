@@ -184,7 +184,7 @@ export default class PlayCountBarGraph extends React.Component<IPlayCountBarGrap
                     {
                         borderWidth: 1,
                         data: playCounts,
-                        label: 'Play Counts'
+                        label: 'Track Play Counts'
                     }
                 ],
                 labels: trackNames
@@ -234,14 +234,6 @@ export default class PlayCountBarGraph extends React.Component<IPlayCountBarGrap
                         type: 'category'
                     },
                 },
-                // onHover: (event: any, activeElements: any[]) => {
-                //     if (activeElements.length > 0) {
-                //         const index = activeElements[0].index;
-                //         this.showTooltip(event, index);
-                //     } else {
-                //         this.hideTooltip();
-                //     }
-                // }
             },
             type: "bar"
         };
